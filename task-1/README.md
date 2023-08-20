@@ -4,14 +4,17 @@ You can describe your results in any language that is convenient for you, not ju
 
 ## Description
 
-Было создано консолькое приложение, подсчитывающее средний возраст всей и 50% самой старой техники из двух мап.
+[Describe what you have done]
 
 ## How to
 
-Запустите task-1.dart (task-1/bin)
+[Describe how to run your application if there are any issues]
 
 ## Problems
 
-Самой сложной задачей оказалось понять, как вытащить из мап конкретные пары ключ-значение (строки 167-173)
-из-за того, что эти мапы динамические, и значения лежат в инстансах.
-И немного поломал голову над тем, чтобы подсчитать средний возраст для нижней половины значений.
+[Describe the problems you encountered]
+
+## More
+
+[Here you can brag about what you managed to implement or do something beyond the task]
+
