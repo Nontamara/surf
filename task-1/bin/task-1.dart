@@ -194,12 +194,7 @@ void main (){
   void removeNewMachinery(){
     for (int x = 0; x < machinery.length; x++) {
       for (int y = 0; y < allAge.length; y++) {
-        if (machinery.containsKey(allAge[y])) {
-          break;
-        }
-        else{
-          machinery.removeWhere((key, value) => value == allAge[y]);
-        }
+        machinery.removeWhere((key, value) => value == allAge[y]);
       }
     }
   }
