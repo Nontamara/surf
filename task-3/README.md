@@ -1,20 +1,14 @@
 # Description of your result
 
-You can describe your results in any language that is convenient for you, not just English.
-
 ## Description
 
-[Describe what you have done]
+напсевдокодил путь до работы
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+скомпилировать код можно только в голове, иначе никак :c
 
 ## Problems
 
-[Describe the problems you encountered]
-
-## More
-
-[Here you can brag about what you managed to implement or do something beyond the task]
+опоздал на работу, пока дебажил этот проект
 
