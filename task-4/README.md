@@ -4,17 +4,15 @@ You can describe your results in any language that is convenient for you, not ju
 
 ## Description
 
-[Describe what you have done]
+Реализовал вывод карт в консоль
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+Запустите task-4.dart из bin
 
 ## Problems
 
-[Describe the problems you encountered]
-
-## More
-
-[Here you can brag about what you managed to implement or do something beyond the task]
+Я не совсем понял задание :c
+вывод элементов List в консоль звучит слишком примитивно, а про реализацию расчёта
+вероятности выигрыша с учётом комбинаций ни слова
 
