@@ -4,17 +4,14 @@ You can describe your results in any language that is convenient for you, not ju
 
 ## Description
 
-[Describe what you have done]
+Реализовал фильтрацию товаров по характеристикам
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+Запустить task-6.dart из bin
 
 ## Problems
 
-[Describe the problems you encountered]
-
 ## More
 
-[Here you can brag about what you managed to implement or do something beyond the task]
 
