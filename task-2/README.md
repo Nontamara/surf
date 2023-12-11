@@ -1,20 +1,13 @@
 # Description of your result
 
-You can describe your results in any language that is convenient for you, not just English.
-
 ## Description
 
-[Describe what you have done]
+Описал объект из реальной жизни - телефон
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+запустить task-2.dart из bin
 
 ## Problems
 
-[Describe the problems you encountered]
-
 ## More
-
-[Here you can brag about what you managed to implement or do something beyond the task]
-
