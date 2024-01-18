@@ -1,12 +1,14 @@
-// создание суперкласса Person
-class Person {
+/// Базовый класс человека Person
+///
+/// Используется в иерархии людей, связанных с киберспортом
+abstract class Person {
   final String name;
 
   Person({
   required this.name,
   });
 
-  // вывод информации о человеке
+  /// вывод информации о человеке
   @override
   String toString() {
     return 'Class: $Person\nName: $name\n';
@@ -14,16 +16,16 @@ class Person {
 }
 
 class Gamer extends Person {
-  String team;
-  String preferredGame;
-  String preferredStrategy;
-  double? winRatio;
+  final String team;
+  final String preferredGame;
+  final String preferredStrategy;
+  final double? winRatio;
 
   Gamer({
     required super.name,
-    this.team = 'none',
     this.preferredGame = 'none',
     this.preferredStrategy = 'none',
+    this.team = 'none',
     this.winRatio,
   });
 
@@ -34,19 +36,19 @@ class Gamer extends Person {
 }
 
 class ProfessionalPlayer extends Gamer {
-  String nickname;
-  String preferredRole;
-  int matchesPlayed;
+  final String nickname;
+  final String preferredRole;
+  final int matchesPlayed;
 
   ProfessionalPlayer({
-    required super.name,
-    required super.team,
-    required super.preferredGame,
-    super.preferredStrategy = 'none',
-    required super.winRatio,
-    required this.nickname,
-    this.preferredRole = 'none',
     this.matchesPlayed = 0,
+    required this.nickname,
+    required super.name,
+    required super.preferredGame,
+    this.preferredRole = 'none',
+    super.preferredStrategy = 'none',
+    required super.team,
+    required super.winRatio,
   });
 
   @override
@@ -56,14 +58,14 @@ class ProfessionalPlayer extends Gamer {
 }
 
 class Coach extends Gamer {
-  int trophiesWon;
+  final int trophiesWon;
 
   Coach({
     required super.name,
-    required super.team,
     required super.preferredGame,
-    required super.winRatio,
+    required super.team,
     this.trophiesWon = 0,
+    required super.winRatio,
   });
 
   @override
@@ -73,12 +75,12 @@ class Coach extends Gamer {
 }
 
 class Commentator extends Gamer {
-  int matchesCommented;
+  final int matchesCommented;
   
   Commentator({
+    this.matchesCommented = 0,
     required super.name,
     required super.preferredGame,
-    this.matchesCommented = 0,
   });
 
   @override
@@ -88,14 +90,12 @@ class Commentator extends Gamer {
 }
 
 void main() {
-  var mike = Person(name: 'Michael Travis');
-  print(mike);
-  var eve = Gamer(name: 'Eve', preferredGame: 'Tic-Tac-Toe X-tended');
+  final eve = Gamer(name: 'Eve', preferredGame: 'Tic-Tac-Toe X-tended');
   print(eve);
-  var frag = ProfessionalPlayer(name: 'Alexander Bashkirov', team: 'Computerra', preferredGame: 'Game.EXE', nickname: 'Frag Sibirskiy', preferredRole: 'Writer', winRatio: 0.95, matchesPlayed: 134);
+  final frag = ProfessionalPlayer(name: 'Alexander Bashkirov', team: 'Computerra', preferredGame: 'Game.EXE', nickname: 'Frag Sibirskiy', preferredRole: 'Writer', winRatio: 0.95, matchesPlayed: 134);
   print(frag);
-  var scott = Coach(name: 'Scott', team: 'Red Renegades', preferredGame: 'Calf-Life Rematch', winRatio: 0.78, trophiesWon: 7);
+  final scott = Coach(name: 'Scott', team: 'Red Renegades', preferredGame: 'Calf-Life Rematch', winRatio: 0.78, trophiesWon: 7);
   print(scott);
-  var anders = Commentator(name: 'Anders Blume', preferredGame: 'Counter-Spike', matchesCommented: 65);
+  final anders = Commentator(name: 'Anders Blume', preferredGame: 'Counter-Spike', matchesCommented: 65);
   print(anders);
 }
