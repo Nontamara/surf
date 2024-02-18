@@ -33,7 +33,14 @@ class Phone {
   }
 
   Phone.makeACall(this.modelName, this.controlInterface, this.price){
-    if (canDoCalls == true) {
+    if (modelName == 'Bananaphone') {
+      print('''\nRing ring ring ring ring ring ring banana phone
+Ding dong ding dong ding dong ding donana phone
+It grows in bunches, I've got my hunches
+It's the best! Beats the rest!
+Cellular, modular, interactivodular!''');
+    }
+    else if (canDoCalls == true) {
       print("\nCalling someone with $modelName");
     }
     else{
@@ -85,7 +92,14 @@ class CameraInfo{
 
 void main() {
   Phone.printInfo('panasonicKXTS', 'buttons', 12);
+  Phone.makeACall('panasonicKXTS', 'buttons', 12);
+
   Phone.printInfo('nokia3310', 'buttons', 16);
+  Phone.makeACall('nokia3310', 'buttons', 16);
+
   Phone.printInfo('googlePixel', 'touchscreen', 80);
   Phone.makeACall('googlePixel', 'touchscreen', 80);
+
+  Phone.printInfo('Bananaphone', 'banana peel', 1);
+  Phone.makeACall('Bananaphone', 'banana peel', 1);
 }
