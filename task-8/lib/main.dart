@@ -36,25 +36,22 @@ class _HomePageStatefulState extends State<HomePageStateful> {
 
   void _incrementCounter() {
     setState(() {
-      _counter += 1;
-      _incrementPressCounter += 1;
+      _counter ++;
+      _incrementPressCounter ++;
     });
   }
 
   /// функция уменьшения значения с проверкой на неотрицательность
   void _decrementCounter() {
-    if (_counter >= 1) {
-      setState(() {
-        _counter -= 1;
-        _decrementPressCounter += 1;
-      });
-    }
-    else {
-      setState(() {
-        _decrementPressCounter += 1;
-      });
+    if (_counter > 0) {
+      _counter --;
+    }  else {
       print('value must be more than zero');
     }
+
+    setState(() {
+      _decrementPressCounter ++;
+    });
   }
 
   @override
