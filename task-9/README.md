@@ -4,16 +4,8 @@ You can describe your results in any language that is convenient for you, not ju
 
 ## Description
 
-[Describe what you have done]
-
-## How to
-
-[Describe how to run your application if there are any issues]
-
-## Problems
-
-[Describe the problems you encountered]
+Был создан интерактивный виджет с возможностью перемещения (drag), изменения цвета/размера/формы и воспроизведения анимации
 
 ## Demo
 
-[Leave links to screencasts/screenshots here, you can use a GitHub repository or a separate cloud service]
+![Alt text](GestureMaster.mp4)
